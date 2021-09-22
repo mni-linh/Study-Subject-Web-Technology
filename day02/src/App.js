@@ -5,6 +5,7 @@ import { ClickMe } from './components/ClickMe';
 import { News } from './components/News';
 import { Menu } from './components/Menu';
 import { Home } from './components/Home';
+import { DanhSachThanhPho } from './components/ThanhPho';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
     <BrowserRouter>
       <Menu/>
           <Switch>
+            <Route path="/thanh-pho" component={DanhSachThanhPho}/>
             <Route path="/home" component = {Home}/>
             <Route path="/about" component = {About}/>
             <Route path="/clickme" component = {ClickMe}/>
